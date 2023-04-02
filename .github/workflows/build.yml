@@ -29,8 +29,8 @@ jobs:
 
       - name: Set variables
         run: |
-          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
-          echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "TAG_NAME=latest" >> $GITHUB_ENV
+          echo "RELEASE_NAME=latest" >> $GITHUB_ENV
         shell: bash
 
       - name: Fetch lists from ripe.net
@@ -92,7 +92,7 @@ jobs:
       - name: Move files to publish directory
         run: |
           mkdir -p publish
-          mv ./output/dat/*.dat ./output/dat/*.sha256sum ./output/maxmind/*.mmdb ./output/maxmind/*.sha256sum *.gz *.zip ./publish/
+          mv ./output/dat/*.dat ./output/maxmind/*.mmdb *.gz *.zip ./publish/
           cp -fpPR ./output/text ./publish
 
       - name: Git push assets to "release" branch
