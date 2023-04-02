@@ -57,7 +57,15 @@
       "action": "add",
       "args": {
         "name": "youtube",
-        "uri": "https://raw.githubusercontent.com/kogekiplay/clash_rules/main/geoip/Youtube.txt"
+        "uri": "https://raw.githubusercontent.com/kogekiplay/clash_rules/main/geoip/youtube.txt"
+      }
+    },
+    {
+      "type": "text",
+      "action": "add",
+      "args": {
+        "name": "netflix",
+        "uri": "https://raw.githubusercontent.com/kogekiplay/clash_rules/main/geoip/netflix.txt"
       }
     },
     {
@@ -82,7 +90,8 @@
           "cn",
           "private",
           "telegram",
-          "youtube"
+          "youtube",
+          "netflix"
         ]
       }
     },
@@ -95,7 +104,8 @@
           "cn",
           "private",
           "telegram",
-          "youtube"
+          "youtube",
+          "netflix"
         ]
       }
     },
