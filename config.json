@@ -71,16 +71,10 @@
       "args": {
         "outputName": "geoip.dat",
         "wantedList" : [
+          "cn",
+          "private",
           "telegram"
         ]
-      }
-    },
-    {
-      "type": "v2rayGeoIPDat",
-      "action": "output",
-      "args": {
-        "oneFilePerList": true,
-        "wantedList": ["cn", "private"]
       }
     },
     {
